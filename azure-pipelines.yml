@@ -5,7 +5,7 @@ trigger:
 steps:
   - task: Npm@1
     inputs:
-      command: 'install'
+      command: 'custom'
       customcommand: 'install --production'
   - script: 'npm test'
     displayName: 'Run unit tests'
